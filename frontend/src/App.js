@@ -11,7 +11,7 @@ function App() {
   const [Opacity, setOpacity] = useState(1)
   const [Text, setText] = useState('Text')
   const [ShadowColor, setShadowColor] = useState('#004040')
-  const [BackgroudColor, setBackgroudColor] = useState('#e0e0e0')
+  const [BackgroudColor, setBackgroudColor] = useState('#ffff')
   const [TextColor, setTextColor] = useState('#000000')
 
   useEffect(() => {
@@ -37,10 +37,7 @@ function App() {
         </div>
         <div className="code">
           <p>text-shadow: {ShiftR}px {ShiftD}px {Blur}px {hexToRgba(ShadowColor, Opacity)}</p>
-
         </div>
-
-
 
         <div className="infos">
           <input type="text" value={Text} onChange={(e) => setText(e.target.value)} />
